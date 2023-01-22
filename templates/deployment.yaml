@@ -8,11 +8,11 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: nginx
+      app: devops-assessment
   template:
     metadata:
       labels:
-        app: nginx
+        app: devops-assessment
     spec:
       containers:
         - name: {{ .Chart.Name }}
